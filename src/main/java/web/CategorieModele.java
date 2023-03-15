@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import metier.entities.Categorie;
 
-public class CategorieModel {
+public class CategorieModele {
 	List<Categorie> categories = new ArrayList<>();
 	public List<Categorie> getCategories() {
 		return categories;
