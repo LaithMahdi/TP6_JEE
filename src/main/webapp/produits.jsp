@@ -25,13 +25,15 @@
  </form>
  <table class="table table-striped">
  <tr>
- <th>ID</th><th>Nom Produit</th><th>Prix</th>
+ <th>ID</th><th>Nom Produit</th><th>Prix</th><th>Catégorie</th>
  </tr>
  <c:forEach items="${model.produits}" var="p">
  <tr>
  <td>${p.idProduit }</td>
  <td>${p.nomProduit }</td>
  <td>${p.prix }</td>
+ <td>${p.categorie.nomCat }</td>
+ 
  <td><a onclick="return confirm('Etes-vous sûr ?')" href="supprimer.do?id=${p.idProduit }">Supprimer</a></td>
  <td><a href="editer.do?id=${p.idProduit }">Edit</a></td>
  

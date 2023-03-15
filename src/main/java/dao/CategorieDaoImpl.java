@@ -7,7 +7,7 @@ import util.JpaUtil;
 
 
 public class CategorieDaoImpl implements ICategorieDao{
-	private EntityManager entityManager=JpaUtil.getEntityManager("TP6_JEE");
+	private EntityManager entityManager=JpaUtil.getEntityManager("TP5_JEE");
 	@Override
 	public Categorie save(Categorie cat ) {
 	EntityTransaction tx = entityManager.getTransaction();
